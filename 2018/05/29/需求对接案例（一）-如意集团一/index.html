@@ -1,16 +1,130 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>需求对接案例（一）-如意集团一 | 小绿猴的麻麻</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">需求对接案例（一）-如意集团一</h1><a id="logo" href="/.">小绿猴的麻麻</a><p class="description">不会数学的技术不是好产品</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">需求对接案例（一）-如意集团一</h1><div class="post-meta">May 29, 2018<span> | </span><span class="category"><a href="/categories/产品/">产品</a></span></div><div class="post-content"><p><img src="http://note.youdao.com/yws/res/820/WEBRESOURCE103e8242d6995ac47e981a8fe1bb4857" alt="img"></p>
-<p>连接数据库报错，root无外网授权，现在授权某一个IP的访问</p>
-<p>> create user ‘coursemanager2’@’%’ identified by ‘881121abC&amp;*’; </p>
-<p>> grant select, insert, update, delete, create, alter, event, drop, references, create temporary tables, create view, show view, alter  routine, create routine, execute, index on <em>.</em> to ‘coursemanager2’@’%’ identified by ‘881121abC&amp;*’;</p>
-<p>> select * from mysql.user\G;</p>
-<p><img src="http://note.youdao.com/yws/res/817/WEBRESOURCE1f565e9c77927660a28ae777bbd5aeeb" alt="img"></p>
-<p>还是报错，不行，原来是mysql只授权了本机ip</p>
-<p><img src="http://note.youdao.com/yws/res/828/WEBRESOURCE1305cd50c00dfea2e4082ba0b38bbbfe" alt="img"></p>
-<p><img src="http://note.youdao.com/yws/res/830/WEBRESOURCE288ff17a9ac7e90a4ad968382c6a2e2c" alt="img"></p>
-<p>将这个地址改为0.0.0.0</p>
-<p><img src="http://note.youdao.com/yws/res/832/WEBRESOURCE40a55f283d17a28501771cf47bd4e233" alt="img"></p>
-<p>大功告成，外网可访问</p>
-<p><img src="http://note.youdao.com/yws/res/834/WEBRESOURCEc2ed64fec15b3a3352abedc23d0f96ae" alt="img"></p>
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>需求对接案例（一）-如意集团一 | 小绿猴的麻麻</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">需求对接案例（一）-如意集团一</h1><a id="logo" href="/.">小绿猴的麻麻</a><p class="description">不会数学的技术不是好产品</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">需求对接案例（一）-如意集团一</h1><div class="post-meta">May 29, 2018<span> | </span><span class="category"><a href="/categories/产品/">产品</a></span></div><div class="post-content"><p>问题&amp;现状：财务使用用友、工厂使用环思ERP，数据格式无法统一，大量合同、数亿金额发货信息需要每月excel人工记录进行核对，业务流程通过邮件审批，当工厂、订单规模再次扩大时，复杂度成倍提升，且无法多维度对客户、订单、业务员进行分析考评。目前明显问题如下：</p>
+<ul>
+<li><ul>
+<li>① 订单客户与开票客户不一致的情况</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li>例如：A客户为订购方，BCD为A的分销商，实际开票为BCD。每笔顶戴需根据A企业分析订购信息，根据BCD开票</li>
+<li>解决方案建议：可以在订单表两个字段区分</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li>② 美金和人民币兑换不精准的问题</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li>订购付款货币出现外汇的情况时，多批次有按人民币的有按照外汇的，财务与发货合同汇率无统一规则</li>
+<li>解决方案：系统每月定时获取银行汇率接口，财务及其他部门均按照下单时间所在月份的汇率进行核算</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li>③合同复审的流程</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li>一般签订的合同都有专职人员计算毛利率是否符合公司要求，才进行正式合同的签订，目前是通过邮件传递，excel表格记录结果的方式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li>④ 标准的CRM系统无法满足的一些特殊流程</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li>先发货后合同</li>
+<li>先发货无合同</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li>⑤ 发散需求</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li>客户分级：将意向、合同、仓库、回款等情况进行数据分析，建立客户风险评估体系，进行优质客户、拖欠客户等级别划分，在客户该缴纳款项时自动提醒客户，并将数据即使反馈给决策者、客户经理，进行风险控制。</li>
+<li>产品：可任意拖动数据形成分析维度，并能够进行图形化展示、数据下载，模板留存</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>​          </p>
+<p>​          下一步工作：智城云会派人驻场了解梳理需求、流程、人员角色，确定合作</p>
+<p>​           初步设计</p>
+<ul>
+<li><ul>
+<li>表结构</li>
+<li><ul>
+<li><ul>
+<li>部门角色：业务经理、合同复审人员、管理员等</li>
+<li>账号</li>
+<li>客户基本信息</li>
+<li>客户账户信息</li>
+<li>订单</li>
+<li>合同</li>
+<li>工厂/仓库</li>
+<li>产品</li>
+<li>仓库库存</li>
+<li>仓库发货单</li>
+<li>回款</li>
+<li>发票</li>
+<li>汇率</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>业务流程1（正常流程，可能不精准对接后优化）</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>​                           </p>
+<p><img src="http://note.youdao.com/yws/res/215/WEBRESOURCEe14b37b341a8c08fe4ce5dfedb8cdd9f" alt="img"></p>
 </div><div class="tags"><a href="/tags/需求对接/">需求对接</a></div><div class="post-nav"><a class="pre" href="/2018/05/30/需求对接案例（一）-如意集团 二/">需求对接案例（一）-如意集团二</a><a class="next" href="/2018/04/23/Shell处理Json文件/">Shell处理Json文件</a></div><div id="lv-container" data-id="city" data-uid="MTAyMC8zNDAzMy8xMDU3MQ=="><script>(function(d, s) {
    var j, e = d.getElementsByTagName(s)[0];
    if (typeof LivereTower === 'function') { return; }
