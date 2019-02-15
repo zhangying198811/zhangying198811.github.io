@@ -3,18 +3,17 @@
 <p>简单的介绍就是：Jupyter Notebook是Ipython的升级版，而Ipython可以说是一个加强版的交互式 Shell，也就是说，它比在terminal里运行python会更方便，界面更友好，功能也更强大。怎么强大法，往下看就知道了。</p>
 <p>二、jupyter notebook的安装和打开</p>
 <ol>
-<li>安装python3</li>
+<li><p>安装python3</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz</span><br><span class="line">tar -zxf Python-3.7.1.tgz</span><br><span class="line">cd Python-3.7.1/</span><br><span class="line">./configure</span><br><span class="line">makemake install</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<p>wget <a href="https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgztar" target="_blank" rel="noopener">https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgztar</a> -zxf Python-3.7.1.tgz  cd Python-3.7.1/./configure makemake install</p>
-<p>​        Python3安装成功</p>
-<ol>
-<li>安装jupyter</li>
-</ol>
-<p>pip install jupyterjupyter notebook</p>
+<p>​       Python3安装成功</p>
+<p>​       2.安装jupyter</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install jupyterjupyter notebook</span><br></pre></td></tr></table></figure>
 <p> 报错：</p>
 <p><img src="https://note.youdao.com/yws/res/1072/WEBRESOURCEa68c0971a1baa0f7f19c751fae26b667" alt="img"></p>
 <p>解决方案：</p>
-<p>jupyter notebook –no-browser –port 8888 –ip=172.31.205.77 –allow-root</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook --no-browser --port 8888 --ip=172.31.205.77 --allow-root</span><br></pre></td></tr></table></figure>
 <p>执行成功！</p>
 <p><img src="https://note.youdao.com/yws/res/1076/WEBRESOURCE4f46dccbba9791aa8f114d1105cb6ca7" alt="img"></p>
 <p>注意：ip为内网ip,如果设置为127.0.0.1可能不成功</p>
@@ -25,9 +24,18 @@
 <p>password均为空即可。</p>
 <p>访问<a href="http://47.104.130.114:8888/notebooks/Untitled.ipynb?kernel_name=python3" target="_blank" rel="noopener">http://47.104.130.114:8888/notebooks/Untitled.ipynb?kernel_name=python3</a> 即可打开</p>
 <p>2）Jupyter无法加载Turtle画图模块，解决办法：</p>
-<p>pip3 install mobilechelonian</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install mobilechelonian</span><br></pre></td></tr></table></figure>
 <p>执行结果：</p>
 <p><img src="https://note.youdao.com/yws/res/1092/WEBRESOURCEc000dd9e28ea989f35ea0967fa5a195c" alt="img"></p>
+<p>3）修改Jupyter主题</p>
+<p>​      pip3突然不见了，执行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python3-pip</span><br></pre></td></tr></table></figure>
+<p>​      安装成功后，执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple jupyterthemes</span><br><span class="line">jt -t onedork -f fira -fs 13 -T -N</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p><img src="https://note.youdao.com/yws/res/1103/WEBRESOURCE49cdcbcb98874bea0971d8ed1e151e82" alt="img"></p>
+<p>​     </p>
+<p>jt主题的使用方法见：<a href="https://github.com/dunovank/jupyter-themes" target="_blank" rel="noopener">https://github.com/dunovank/jupyter-themes</a></p>
 </div><div class="tags"><a href="/tags/python/">python</a><a href="/tags/编程工具/">编程工具</a></div><div class="post-nav"><a class="next" href="/2018/10/12/Python在线编辑器/">Python在线编辑器 - Skulpt</a></div><div id="lv-container" data-id="city" data-uid="MTAyMC8zNDAzMy8xMDU3MQ=="><script>(function(d, s) {
    var j, e = d.getElementsByTagName(s)[0];
    if (typeof LivereTower === 'function') { return; }
